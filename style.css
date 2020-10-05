@@ -1,0 +1,149 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height :59px;
+}
+/*Navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute; 
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-2;
+    opacity:4;
+}
+/*Navigation bar: logo and image*/
+#logo{
+    margin:3px 45px;
+}
+#logo img {
+    height: 150px;
+    margin:-3px 5px;
+}
+/*Navigation Bar: List styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display:flex;
+    font-family: 'Pacifico', cursive;
+}
+#navbar ul li{
+   /*color:white; */
+   list-style: none;
+   font-size:1.3rem;    
+}
+#navbar ul li a {
+    color: floralwhite;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration:none;    
+ }
+ #navbar ul li a:hover {
+    color: black;
+    background-color: ghostwhite;
+ }
+ /*home section*/
+ #home{
+     display:flex;
+     flex-direction:column;
+     height:770px;
+     padding:3px 200px;
+     justify-content:center;
+     align-items:center;
+}
+
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('../images/bg1.jpg') no-repeat center center/cover;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-2;
+    opacity:3;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-size: 2.7rem ;
+    font-family: 'Abril Fatface', cursive;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Pacifico', cursive;
+}
+/*service section*/
+#services{
+    margin:90px;
+    display:flex;
+}
+#services .box{
+    border: 3px solid black;
+    padding:34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: whitesmoke;
+}
+#services .box img{
+    height:160px;
+    height:160px;
+    margin:auto;
+    display:block;
+}
+#service .boxp{
+    font-family:'Abril Fatface', cursive;
+}
+/* Client Section*/
+#client-section{
+   height:300px;
+}
+#clients{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#clients img{
+    height: 130px;
+}
+/* Utility classes*/
+.h-primary{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    padding:12px; 
+}
+.h-secondary{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    padding:12px; 
+}
+.btn{
+    padding: 7px 20px;
+        border: 2px solid white;
+        background-color: rgb(8, 8, 8);
+        color: ghostwhite;
+        margin: 10px;
+        font-size: 1.8rem;
+        border-radius:8px;
+        cursor: pointer;
+    }
+    .center{
+       text-align: center; 
+    }
